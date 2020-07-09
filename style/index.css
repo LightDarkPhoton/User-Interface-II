@@ -54,5 +54,36 @@
     left: 50%;                        /* horizontal alignment */
     top: 40%;                         /* vertical alignment */
     transform: translate(-50%, -50%); /* precise centering; see link below */
+}
+
+.sectionImages {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sectionImages img {
+
+    width: 200px;
+}
+
+.container-subtitle-image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactMeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    background-color: thistle;
+}
+
+.contactMeButton {
+    border: 0.5px solid grey;
+    background-color: red;
 
 }

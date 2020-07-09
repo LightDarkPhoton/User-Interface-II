@@ -1,1 +1,58 @@
 /* Add CSS styling here */
+
+*{
+    border: 0.5px solid grey;
+}
+
+#homeBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rightNavBar a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.rightNavBar a:hover {
+    background: red;
+}
+
+.bigImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Source: https://www.sitepoint.com/community/t/centering-image-inside-flexbox/287444/2 */
+
+.bigImage img {
+    width: 50%;
+
+}
+
+.nameInsideImageText {
+    /* Source: https://stackoverflow.com/a/35871591/1291940 */
+    font-size: 200%;
+    color: white;
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 30%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+}
+
+.buttonInsideImage {
+    background-color: white;
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 40%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+
+}

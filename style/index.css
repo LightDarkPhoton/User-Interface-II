@@ -1,7 +1,7 @@
 /* Add CSS styling here */
 
 *{
-    border: 0.5px solid grey;
+    /*border: 0.5px solid grey; */
 }
 
 #homeBar {
@@ -19,10 +19,11 @@
     display: flex;
     justify-content: space-evenly;
     width: 100px;
+    color: #50514F;
 }
 
 .rightNavBar a:hover {
-    background: red;
+    background: #ECD444;
 }
 
 .bigImage {
@@ -87,13 +88,14 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 5%;
 
-    background-color: thistle;
+    background-color:#FC7A1E;
 }
 
 .contactMeButton {
-    border: 0.5px solid grey;
-    background-color: red;
+    border: 0.5px solid E7E7E7;
+    background-color: E7E7E7;
 
 }
 
@@ -115,6 +117,33 @@
     .sectionImages {
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
+    }
 
+    .nameInsideImageText {
+        font-size: 20px;
+    }
+
+    .buttonInsideImage {
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 37%;                         /* vertical alignment */
+        transform: translate(-50%, -50%); /* precise centering; see link below */
+    }
+}
+
+@media (max-width: 500px) {
+
+    #homeBar {
+        color: blue;
+    }
+
+    .nameInsideImageText {
+        font-size: 15px;
+    }
+
+    .buttonInsideImage {
+
+        font-size: 5%;
     }
 }

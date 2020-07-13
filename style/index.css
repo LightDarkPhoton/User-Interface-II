@@ -58,12 +58,21 @@
 
 .sectionImages {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+
+    width: 50%;
+}
+
+#entireSection {
+    display: flex;
+    justify-content: center;
 }
 
 .sectionImages img {
-
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 200px;
 }
 
@@ -86,4 +95,26 @@
     border: 0.5px solid grey;
     background-color: red;
 
+}
+
+@media (max-width: 800px) {
+
+    #homeBar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        color: red;
+    }
+
+    .rightNavBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionImages {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 }

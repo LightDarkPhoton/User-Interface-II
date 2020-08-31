@@ -1,1 +1,152 @@
 /* Add CSS styling here */
+
+*{
+    /*border: 0.5px solid grey; */
+}
+
+#homeBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rightNavBar a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    color: #50514F;
+    border: 0.5px solid black;
+    text-decoration: none;
+}
+
+.rightNavBar a:hover {
+    background: #ECD444;
+}
+
+.bigImage {
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Source: https://www.sitepoint.com/community/t/centering-image-inside-flexbox/287444/2 */
+
+.bigImage img {
+    width: 50%;
+
+}
+
+.nameInsideImageText {
+    /* Source: https://stackoverflow.com/a/35871591/1291940 */
+    font-size: 200%;
+    color: white;
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 30%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+}
+
+.buttonInsideImage {
+    background-color: white;
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 40%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+}
+
+.sectionImages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 50%;
+}
+
+#entireSection {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionImages img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 200px;
+}
+
+.container-subtitle-image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactMeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 5%;
+
+    background-color:#FC7A1E;
+}
+
+.contactMeButton {
+    border: 0.5px solid E7E7E7;
+    background-color: E7E7E7;
+
+}
+
+@media (max-width: 800px) {
+
+    #homeBar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        color: red;
+    }
+
+    .rightNavBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionImages {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .nameInsideImageText {
+        font-size: 20px;
+    }
+
+    .buttonInsideImage {
+        position: absolute;  
+        left: 50%;                        /* horizontal alignment */
+        top: 37%;                         /* vertical alignment */
+        transform: translate(-50%, -50%); /* precise centering; see link below */
+    }
+}
+
+@media (max-width: 500px) {
+
+    #homeBar {
+        color: blue;
+    }
+
+    .nameInsideImageText {
+        font-size: 15px;
+    }
+
+    .buttonInsideImage {
+
+        font-size: 5%;
+    }
+}
